@@ -1,0 +1,136 @@
+#banner {
+	.item {
+		min-height: 760px;
+		display: -webkit-flex; /* Safari */
+	  -webkit-align-items: center; /* Safari 7.0+ */
+	  display: flex;
+	  align-items: center;
+		.text-carousel {
+			color:#fff;
+			margin: 0 auto;
+			text-align:center;
+			max-width: 60%;
+			text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+			h1 {
+				font-size: 70px;
+				text-transforme: uppercase;
+				span {
+					font-family: "Gotham HTF Book";
+				}
+			}
+			p {
+				margin-top:20px;
+				font-size: 18px;
+			}
+			a {
+				display: inline-block;
+				margin: 20px 10px;
+				font-size: 20px;
+				padding:15px 90px 14px 30px;
+				color:#fff;
+				background: $azul;
+				position:relative;
+				border-radius:3px;
+				span {
+					position:absolute;
+					right:0;
+					top:0;
+					width:60px;
+					height:59px;
+					background: url(../../../images/icon-prev-next-carousel.png) 1px 6px rgba(0,0,0,0.2);
+				}
+				&:hover {
+					background: $vermelho;
+				}
+			}
+		}
+		&.it-1 {
+			background: url(../../../images/banner-1.jpg) center top;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		&.it-2 {
+			background: url(../../../images/banner-2.jpg) center top;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		&.it-3 {
+			background: url(../../../images/banner-3.jpg) center top;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		&.it-4 {
+			background: url(../../../images/banner-4.jpg) center top;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	}
+	.owl-nav {
+		display: none;
+		/*margin-top:0;
+		.owl-prev, .owl-next{
+			position: absolute;
+			top:50%;
+			margin-top:-15px;
+			background: url(../../../images/icon-prev-next-carousel.png);
+			width:50px;
+			height:50px;
+			border: 1px solid rgba(255, 255, 255, 0.2);
+			border-radius: 50px;
+			&:hover {
+				background: url(../../../images/icon-prev-next-carousel.png);
+			}
+		}
+		.owl-prev{
+			left:20px;
+			background-position: -6px -38px;
+			&:hover {
+				background-position: -6px -38px;
+			}
+		}
+		.owl-next{
+			right:20px;
+			background-position: -4px -1px;
+			&:hover {
+				background-position: -4px -1px;
+			}
+		}*/
+	}
+	.owl-dots {
+		position: absolute;
+    margin-top: -60px;
+    width: 100%;
+    .owl-dot {
+	    span {
+		    width: 65px;
+		    height: 4px;
+		    border-radius: 0;
+		    background: rgba(255,255,255,0.5)
+			}
+			&:hover {
+				span {
+					background: $branco;
+				}
+			}
+			&.active {
+				span {
+					background: $branco;
+				}
+			}
+		}
+	}
+}
+
+#parceiros {
+	.owl-nav {
+		[class*=owl-] {
+			color: $cinza_escuro;
+	    font-size: 34px;
+	    margin: 10px;
+	    background: transparent;
+		}
+	}
+	.owl-dots {
+		display:none;
+	}
+}

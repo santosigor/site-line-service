@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "Gotham HTF Book";
+  src: url('../../common/fonts/gotham-htf-book.woff2') format('woff2'), url('../../common/fonts/gotham-htf-book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham HTF Medium";
+  src: url('../../common/fonts/gotham-htf-medium.woff2') format('woff2'), url('../../common/fonts/gotham-htf-medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham HTF Bold";
+  src: url('../../common/fonts/gotham-htf-bold.woff2') format('woff2'), url('../../common/fonts/gotham-htf-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	font-family: "Gotham HTF Book";
+	font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong {
+	font-weight: normal;
+	font-family: "Gotham HTF Bold";
+}
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	&.ls-title-1 {
+		font-family: "Gotham HTF Book";
+		margin-bottom: 40px;
+		span {
+			font-family: "Gotham HTF Bold";
+		}
+		i {
+			display: block;
+			width:60px;
+			height:4px;
+			background-color: $vermelho;
+			margin:0 auto;
+			margin-top: 30px;
+		}
+	}
+	&.ls-title-2 {
+		font-size: 2rem;
+		color: $branco;
+		margin:0 auto;
+			text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+		img {
+			display: block;
+			margin:0 auto;
+			margin-bottom: 30px;
+			border-radius:100%;
+		}
+		span {
+			display: block;
+			margin-bottom: 20px;
+		}
+		i {
+			display: block;
+			width:60px;
+			height:4px;
+			background-color: $vermelho;
+			margin:0 auto;
+		}
+	}
+}
+
+a {
+	outline: none!important;
+	text-decoration: none!important;
+}
+
+.transition {
+	-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+}
+
+.campo {
+	margin-bottom: 10px;
+	input, select {
+		padding: 15px 20px;
+    margin: 0;
+    height: 50px;
+    width: 100%;
+		line-height: 15px;
+		font-size: 15px;
+    color: #323232;
+    border-radius: 3px;
+    background: #fff;
+    border: 1px solid #dadada;
+    transition: all 0.3s ease 0s;
+    outline: none;
+    font-family: "Gotham HTF Medium";
+    text-transform: uppercase;
+    &:focus {
+			border-color: #202121;
+			background: #f5f5f5;
+		}
+	}
+	textarea {
+		width: 100%;
+    min-height: 250px;
+    padding: 15px 20px;
+    margin: 0;
+    line-height: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    resize: none;
+    overflow: auto;
+    font-size: 15px;
+    font-family: "Gotham HTF Medium";
+    color: #323232;
+    border-radius: 3px;
+    background: #fff;
+    border: 1px solid #dadada;
+    transition: all 0.3s ease 0s;
+    outline: none;
+    text-transform: uppercase;
+    &:focus {
+			border-color: #202121;
+			background: #f5f5f5;
+		}
+	}
+}
+
+.btn {
+	cursor: pointer;
+}
+
+@media (max-width: 991.98px) {
+	h1 {
+		&.ls-title-2 {
+			margin-bottom: 40px;
+		}
+	}
+}		

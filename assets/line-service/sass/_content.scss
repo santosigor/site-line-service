@@ -1,0 +1,183 @@
+.align-item-center {
+	display: -webkit-flex; /* Safari */
+  -webkit-align-items: center; /* Safari 7.0+ */
+  display: flex;
+  align-items: center;
+}
+
+.ls-section {
+	min-height: 540px;
+	padding:80px 0;
+	background: $branco;
+	&#ls-sobre {
+		min-height: auto;
+	}
+	&#ls-terceirizacoes {
+		background: url(../../../images/background-ls-terceirizacao.jpg) center top;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: auto;
+		p {
+			color: $branco;
+			a {
+				color: $branco;
+				font-family: "Gotham HTF Medium";
+				border-bottom: 1px dotted $branco;
+				text-decoration: none;
+		    &:hover {
+					border-bottom: 0;		    	
+		    }
+			}
+		}
+	}
+	&#ls-encontre-funcionario {
+		
+	}
+	&#ls-recrutamento-selecao {
+		background: $vermelho;
+		min-height: auto;
+		background:	url(../../../images/background-recrutamento-selecao.jpg) center top;
+		background-repeat: no-repeat;
+		background-size: cover;
+		color:#fff;
+		.col-lg-8 {
+			padding-top: 50px;
+		}
+	}
+	&#ls-temporarios {
+		background-color: #333333;
+		min-height: auto;
+		color: $branco;
+		ul {
+			margin: 0;
+    	padding: 0 0 0 16px;
+		}
+	}
+	&#ls-parcerias {
+		min-height: 300px;
+	}
+	&#ls-candidato-empresa {		
+		background:	url(../../../images/background-ls-candidato-empresa.jpg) center top;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+		h2 {
+			text-transform: uppercase;
+			font-family: "Gotham HTF Book";
+			margin-bottom: 40px;
+			span {
+				font-family: "Gotham HTF Bold";
+			}
+		}
+		.bdr-rg {
+			border-right:2px dotted #333333;
+		}
+		a {
+			display:inline-block;
+			padding:20px 30px;
+			color:$branco;
+			text-decoration:none;
+			font-size: 16px;
+		  border-radius: 3px;
+			box-shadow: inset 0 -3px rgba(0,0,0,.3);
+			-webkit-transition: .2s;
+	    -moz-transition: .2s;
+	    transition: .2s;
+			&.bt-sol-prop {
+				background: $vermelho;
+				&:hover {
+			    background:#c0392b;
+				}
+			}
+			&.bt-envie-cur {
+				background: $azul;
+				&:hover {
+			    background:#2980b9;
+				}
+			}
+		}
+	}
+	&#ls-contato {
+		ul {
+			text-align: right;
+			li {
+				display: block;
+				font-size: 20px;
+				span {
+					color: $vermelho;
+					font-family: "Gotham HTF Medium";
+					font-size: 22px;
+				}
+			}
+		}
+		.campo {
+			a {
+				display: inline-block;
+				padding: 15px 90px 15px 30px;
+				color: $branco;
+		    font-family: "Gotham HTF Medium";
+		    border-radius: 3px;
+		    background: url(../../../images/icon-mail.png) no-repeat 110px center $vermelho;
+		    position: relative;
+				box-shadow: inset 0 -3px rgba(0,0,0,.3);
+		    &:after {
+		    	content: '';
+		    	position: absolute;
+		    	left: 90px;
+		    	top:50%;
+		    	margin-top:-12px;
+		    	height:24px;
+		    	border-left: 1px solid rgba(255,255,255,.5);
+		    }
+		    &:hover {
+		    	background-color: $cinza_escuro;
+		    }
+			}
+		}
+	}
+	&#ls-localizacao {
+		padding:0;
+	}
+}
+
+.md-header-empresa, .md-header-candidato {
+	color: $branco;
+	border-radius: .3rem .3rem 0 0;
+}
+
+.md-header-empresa {
+	background: $vermelho;
+}
+
+.md-header-candidato {
+	background: $azul;
+}
+
+footer {
+	text-align: center;
+	padding: 40px 0;
+	background: $branco;
+}
+
+@media (max-width: 991.98px) {
+	.ls-section {
+		&#ls-candidato-empresa {
+			.bdr-rg {
+				border-right:none;
+				border-bottom:2px dotted #333333;
+				padding-bottom:50px;
+				margin-bottom:40px;
+			}
+		}
+		&#ls-recrutamento-selecao {
+			.col-lg-8 {
+				padding-top: 0;
+			}
+		}
+		&#ls-contato {
+			ul {
+				text-align: center;
+			}
+		}
+	}
+}
