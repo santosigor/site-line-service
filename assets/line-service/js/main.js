@@ -43,25 +43,48 @@ $(document).ready(function() {
 
   // End: Fixa menu
 
-  // Parceiros
+  // vagas
 
-  $('#parceiros').owlCarousel({
-    loop:true,
+  $('#vagas').owlCarousel({
+    //loop:true,
     nav:true,
     navText: ["&larr;","&rarr;"],
+    stagePadding: 40,
     responsive:{
       0:{
-        items:2
+        items:1
       },
       600:{
-        items:3
+        items:2
       },
       1000:{
-        items:5
+        items:4
       }
     }
   })
 
-  // End: Parceiros
+  // End: vagas
+
+  // noticias
+
+  $('#noticias').owlCarousel({
+    //loop:true,
+    nav:true,
+    navText: ["&larr;","&rarr;"],
+    stagePadding: 40,
+    responsive:{
+      0:{
+        items:1
+      },
+      600:{
+        items:2
+      },
+      1000:{
+        items:3
+      }
+    }
+  })
+
+  // End: noticias
 
 });

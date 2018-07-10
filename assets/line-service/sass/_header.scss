@@ -1,9 +1,9 @@
 .bg-faded {
   margin-top: 40px;
   background-color: transparent;
-  transition: all 400ms;
-  -webkit-transition: all 400ms;
-  -moz-transition: all 400ms;
+  transition: background 300ms;
+  -webkit-transition: background 300ms;
+  -moz-transition: background 300ms;
    &.fixed {
   	margin-top: 0;
 	  background-color: $cinza_escuro;

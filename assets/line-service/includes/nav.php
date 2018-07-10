@@ -1,5 +1,3 @@
-<span id="home"></span>
-
 <nav class="navbar fixed-top navbar-toggleable-md bg-faded">
   <div class="container">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">

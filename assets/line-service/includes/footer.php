@@ -1,12 +1,12 @@
     <section class="ls-section" id="ls-contato">
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-sm-12">
             <h1 class="ls-title-1">Contato<i></i></h1>
           </div>
         </div>
         <div class="row">
-          <div class="col-12 col-lg-6">
+          <div class="col-sm-6">
             <ul>
               <li><span>Endereço:</span></li>
               <li>Avenida Professor José Barreto, 111 - Sala 17<br>CEP.: 06703-001 / Cotia - São Paulo</li>
@@ -18,20 +18,20 @@
               <li>Segunda à Sexta, 08h00 as 17h00</li>
             </ul>
           </div>
-          <div class="col-12 col-lg-6">
-            <form name="form1" id="form1" enctype="multipart/form-data" action="index.php" method="post">
+          <div class="col-sm-6">
+            <form name="form" id="form" enctype="multipart/form-data" action="index.php" method="post">
 
               <div class="campo">              
-                <input type="text" name="nomecontato" id="nomecontato" placeholder="Nome" maxlength="100">
+                <input type="text" name="nome" id="nome" placeholder="Nome" maxlength="100">
               </div>
               <div class="campo">
-                <input type="text" name="telefonecontato" id="telefonecontato" placeholder="Telefone/Celular" maxlength="13" onkeyup="mascaraTexto(event,'(99)99999999');BloquearLetras(this,'num');" onblur="VerificarTel(this);">
+                <input type="text" name="telefone" id="telefone" placeholder="Telefone/Celular" maxlength="13" onkeyup="mascaraTexto(event,'(99)99999999');BloquearLetras(this,'num');" onblur="VerificarTel(this);">
               </div>
               <div class="campo">
-                <input type="text" name="emailcontato" id="emailcontato" placeholder="E-mail" onblur="VerificaEmail(this);" maxlength="35">
+                <input type="text" name="email" id="email" placeholder="E-mail" onblur="VerificaEmail(this);" maxlength="35">
               </div>
               <div class="campo">
-                <textarea name="mensagemcontato" id="mensagemcontato" placeholder="Mensagem" maxlength="400"></textarea>
+                <textarea name="mensagem" id="mensagem" placeholder="Mensagem" maxlength="400"></textarea>
               </div>
               <div class="campo">
                 <a href="#" class="transition">Enviar</a>

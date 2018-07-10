@@ -1,6 +1,7 @@
 #banner {
 	.item {
-		min-height: 760px;
+		height:100vh;
+		max-height: 80vh;
 		display: -webkit-flex; /* Safari */
 	  -webkit-align-items: center; /* Safari 7.0+ */
 	  display: flex;
@@ -10,7 +11,6 @@
 			margin: 0 auto;
 			text-align:center;
 			max-width: 60%;
-			text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
 			h1 {
 				font-size: 70px;
 				text-transforme: uppercase;
@@ -121,7 +121,7 @@
 	}
 }
 
-#parceiros {
+#vagas, #noticias {
 	.owl-nav {
 		[class*=owl-] {
 			color: $cinza_escuro;
